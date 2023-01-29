@@ -14,6 +14,7 @@ const bodyParser = require('body-parser')
 // ROUTERS
 const indexRouter = require('./routes/index')
 const authorRouter = require('./routes/authors')
+const bookRouter = require('./routes/books')
 // END ROUTERS
 
 // CONFIG
@@ -38,6 +39,7 @@ db.once('open', () => console.log('Connected to Mongoose'))
 // ROUTES
 app.use('/', indexRouter)
 app.use('/authors', authorRouter)
+app.use('/books', bookRouter)
 // END ROUTES
 
 
