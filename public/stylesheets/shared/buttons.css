@@ -22,7 +22,11 @@
 
 .btn-row {
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
+}
+
+.btn-row--end {
+    justify-content: flex-end;
 }
 
 .btn--primary {
